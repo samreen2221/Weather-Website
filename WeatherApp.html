@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta http-equiv="refresh" content="3"> -->
+	<link rel="stylesheet" type="text/css" href="WeatherApp.css">
+	<title>Weather App</title>
+</head>
+<body>
+<div class="container">
+	<div class="weather_app">
+
+		<h1 align="center">Weather Forecast
+			<div>
+			<img class="img" src="https://static.vecteezy.com/system/resources/thumbnails/008/854/797/small/sunny-and-rainy-cloudy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png" align="right" height="120px">
+			
+		</div>
+		</h1>
+		<br>
+	<div >
+	<input type="text"  id="cityname" placeholder=" City Name..." required></div>
+	<div><button type="button" margin="30px"  id="search" onclick="fetchData()"><b>Search</b><br></button>
+</div>
+<br>
+<div class="content">
+	
+	<span><b>City : </b><span id="city"></span></span><br/><br/>
+	<span><b>Description : </b><span id="desc"></span></span><br/><br/>
+	<span><b>Wind Speed : </b><span id="windspeed"></span> m/hr</span><br/><br/>
+	<span><b>Temperature : </b><span id="temp"></span>deg/cel</span><br/><br/>
+	<span><b>Humadity : </b><span id="hum"></span>deg/cel</span><br/>
+
+</div>
+</div>
+</div>
+<script src="WeatherApp.js"></script>
+</body>
+</html>
